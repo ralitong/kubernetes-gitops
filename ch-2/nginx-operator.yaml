@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-operator
+  annotations:
+    environment: prod
+    organization: marketing
+spec:
+  selector:
+    matchLabels:
+      app: nginx-operator
+  template:
+    metadata:
+      labels:
+        app: nginx-operator
+    spec:
+      containers:
+        - name: nginx-operator
+          image: ralitong/nginx-operator:latest
