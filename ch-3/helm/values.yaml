@@ -1,0 +1,15 @@
+image:
+  repository: gitopsbook/sample-app
+  tag: "v0.2"
+
+nameOverride: "sample-app"
+fullnameOverride: "sample-app"
+
+podAnnotations: {}
+
+environmentVars: [
+  {
+    name: "DEBUG",
+    value: "true"
+  }
+]
