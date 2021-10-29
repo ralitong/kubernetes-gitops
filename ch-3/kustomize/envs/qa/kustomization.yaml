@@ -6,6 +6,7 @@ bases:
 
 patchesStrategicMerge:
 - debug.yaml
+- replica.yaml
 
 images:
 - name: gitopsbook/sample-app
